@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>PainAffectsMovement</RootNamespace>
+    <AssemblyName>PainAffectsMovement</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+
+    <!-- Output the DLL straight into the mod's Assemblies folder -->
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference assemblies for RimWorld: code-stripped stubs, published with
+         Ludeon's permission, so this compiles anywhere without you owning a
+         copy of the game's DLLs. Bump the version to match your RimWorld
+         version if needed - see https://www.nuget.org/packages/Krafs.Rimworld.Ref -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4297" />
+  </ItemGroup>
+
+</Project>

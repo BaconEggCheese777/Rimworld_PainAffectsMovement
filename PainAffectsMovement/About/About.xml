@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>yourname.painaffectsmovement</packageId>
+  <name>Pain Affects Movement</name>
+  <author>yourname</author>
+  <url></url>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Adds a dedicated pain-to-move-speed penalty instead of relying on pain's indirect effect through Consciousness.
+
+Below 20% pain, movement is unaffected. From 20% to 80% pain, move speed drops linearly, reaching a maximum penalty of -40% at 80% pain (and staying there beyond 80%).
+
+Note: this stacks on top of vanilla's existing pain -&gt; Consciousness -&gt; Moving chain, which still applies since it's calculated deep in health code. If you'd rather fully replace that chain, that needs a separate Harmony patch on the capacity calculation - ask if you want that added.</description>
+</ModMetaData>

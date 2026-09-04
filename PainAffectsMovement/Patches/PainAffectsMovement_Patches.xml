@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Add our StatPart to the MoveSpeed stat. StatDef has a generic
+       <parts> list built in, so this works even though MoveSpeed
+       doesn't define one by default. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/StatDef[defName="MoveSpeed"]</xpath>
+    <value>
+      <parts>
+        <li Class="PainAffectsMovement.StatPart_PainMoveSpeed" />
+      </parts>
+    </value>
+  </Operation>
+
+</Patch>
